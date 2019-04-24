@@ -33,5 +33,3 @@ data %>%
   group_by(Condition) %>%
   summarise(mean(R4), sd(R4))
 
-model <- brm(R4 ~ Condition + (1 | Participant) + (1 + Condition | Item), data = data)
-summary(model)
