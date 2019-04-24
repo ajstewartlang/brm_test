@@ -3,6 +3,7 @@ library(readr)
 library(dplyr)
 library(lme4)
 library(emmeans)
+library(Hmisc)
 
 # Region 4 ####
 # Region 4 is the critical region (the question)
