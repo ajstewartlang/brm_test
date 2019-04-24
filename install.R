@@ -1,4 +1,6 @@
-install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("readr")
+install.packages("dplyr")
 install.packages("lme4")
 install.packages("lmerTest")
 install.packages("emmeans")
