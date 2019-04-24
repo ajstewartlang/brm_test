@@ -2,10 +2,7 @@ library(ggplot2)
 library(readr)
 library(dplyr)
 library(lme4)
-library(lmerTest)
 library(emmeans)
-library(fitdistrplus)
-library(brms)
 
 # Region 4 ####
 # Region 4 is the critical region (the question)
