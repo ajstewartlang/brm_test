@@ -4,6 +4,7 @@ library(dplyr)
 library(lme4)
 library(emmeans)
 library(Hmisc)
+library(brms)
 
 # Region 4 ####
 # Region 4 is the critical region (the question)
@@ -33,3 +34,7 @@ data %>%
   group_by(Condition) %>%
   summarise(mean(R4), sd(R4))
 
+model <- brm(R4 ~ Condition + (1 | Participant) + (1 + Condition | Item), data = data)
+summary(model)
+
+plot(model)
